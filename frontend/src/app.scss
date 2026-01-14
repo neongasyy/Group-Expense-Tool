@@ -1,0 +1,159 @@
+html{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-selection {  
+    color: #101c2c;
+    background: #97c9c7;
+}
+  
+::selection {
+    color: #101c2c;
+    background: #97c9c7;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+    font-family: 'Outfit', sans-serif;
+    //font-family: 'Space Mono', monospace;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //background: rgb(16,28,44);
+
+    section{
+        scroll-snap-align: center;
+        //background: rgb(16,28,44);
+        //background: linear-gradient(90deg, rgba(16,28,44,1) 20%, rgba(33,45,61,1) 100%);    
+    }
+}
+
+.layout-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.layout-content {
+  height: calc(100vh - 64px); // header height
+  overflow-y: auto;
+}
+
+@media only screen and (min-width: 769px) {
+    /* For desktops: */
+    html{
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
+    section{
+        scroll-snap-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait){
+    /* For mobile phones: */
+
+}
+ 
+// Fonts
+
+@font-face {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Space Mono"), url("./font/SpaceMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Space Mono"), url("./font/SpaceMono-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: local("Outfit"), url("./font/Outfit-Thin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local("Outfit"), url("./font/Outfit-ExtraLight.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local("Outfit"), url("./font/Outfit-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Outfit"), url("./font/Outfit-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Outfit"), url("./font/Outfit-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local("Outfit"), url("./font/Outfit-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Outfit"), url("./font/Outfit-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: local("Outfit"), url("./font/Outfit-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local("Outfit"), url("./font/Outfit-Black.woff2") format("woff2");
+}
